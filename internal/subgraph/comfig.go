@@ -6,20 +6,23 @@ import (
 	"gitlab.com/distributed_lab/figure"
 	"gitlab.com/distributed_lab/kit/comfig"
 	"gitlab.com/distributed_lab/kit/kv"
+	"gitlab.com/distributed_lab/logan/v3"
 )
 
 type Subgrapher interface {
 	Subgraph() Subgraph
 }
 
-func NewSubgrapher(getter kv.Getter) Subgrapher {
+func NewSubgrapher(log *logan.Entry, getter kv.Getter) Subgrapher {
 	return &subgrapher{
 		getter: getter,
+		log:    log.WithFields(logan.F{"service": "subgraph"}),
 	}
 }
 
 type subgrapher struct {
 	getter kv.Getter
+	log    *logan.Entry
 	comfig.Once
 }
 
@@ -35,6 +38,6 @@ func (b *subgrapher) Subgraph() Subgraph {
 		if err != nil {
 			panic(errors.Wrap(err, "failed to figure out subgraph"))
 		}
-		return New(graphql.NewClient(config.URL, nil))
+		return New(b.log, graphql.NewClient(config.URL, nil))
 	}).(Subgraph)
 }

@@ -30,6 +30,6 @@ func New(getter kv.Getter) Config {
 		Logger:     logger,
 		Copuser:    copus.NewCopuser(getter),
 		Listenerer: comfig.NewListenerer(getter),
-		Subgrapher: subgraph.NewSubgrapher(getter),
+		Subgrapher: subgraph.NewSubgrapher(logger.Log(), getter),
 	}
 }
