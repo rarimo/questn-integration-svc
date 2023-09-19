@@ -20,7 +20,7 @@ func (s *api) router() chi.Router {
 		),
 	)
 
-	r.Route("/questn", func(r chi.Router) {
+	r.Route("/integrations/questn", func(r chi.Router) {
 		r.Route("/v1", func(r chi.Router) {
 			r.Get("/poh_status", handlers.ProofOfHumanityStatus)
 		})
