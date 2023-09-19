@@ -2,7 +2,9 @@
 
 The QuestN integration API for certain actions’ verification.
 
-## Specifics
+## API
+
+[API Technical Documentation](https://questn.notion.site/API-Technical-Documentation-2aa6cc8c1ba546cbb8b4e0156fba6e31)
 
 Status Code of the endpoint's response is always 200 and optionally contains error field in the response body.
 
