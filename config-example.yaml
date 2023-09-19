@@ -13,4 +13,5 @@ cop:
   service_port: 80
 
 subgraph:
-  url: 'http://...'
+  url: 'https://api.thegraph.com/subgraphs/name/volodymyrzolotukhin/sbtidentityverifier
+'
