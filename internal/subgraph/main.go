@@ -1,5 +1,7 @@
 package subgraph
 
+import "context"
+
 type Subgraph interface {
-	UserStatus(address string) (bool, error)
+	UserStatus(ctx context.Context, address string) (bool, error)
 }

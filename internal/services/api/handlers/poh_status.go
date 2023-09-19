@@ -14,7 +14,7 @@ func ProofOfHumanityStatus(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	status, err := Subgraph(r).UserStatus(request.Address)
+	status, err := Subgraph(r).UserStatus(r.Context(), request.Address)
 	if err != nil {
 		Log(r).WithError(err).Error("failed to get status")
 		models.NewProofOfHumanityResponseError(w, err, http.StatusInternalServerError)

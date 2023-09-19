@@ -1,6 +1,7 @@
 package subgraph
 
 import (
+	"context"
 	"github.com/hasura/go-graphql-client"
 	"github.com/pkg/errors"
 	"gitlab.com/distributed_lab/figure"
@@ -15,14 +16,15 @@ type Subgrapher interface {
 
 func NewSubgrapher(log *logan.Entry, getter kv.Getter) Subgrapher {
 	return &subgrapher{
-		getter: getter,
 		log:    log.WithFields(logan.F{"service": "subgraph"}),
+		getter: getter,
 	}
 }
 
 type subgrapher struct {
-	getter kv.Getter
+	ctx    context.Context
 	log    *logan.Entry
+	getter kv.Getter
 	comfig.Once
 }
 
