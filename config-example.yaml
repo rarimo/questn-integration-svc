@@ -9,7 +9,7 @@ cop:
   disabled: true
   endpoint: "http://..."
   upstream: "http://..."
-  service_name: relayer-svc
+  service_name: questn-integration-svc
   service_port: 80
 
 subgraph:
