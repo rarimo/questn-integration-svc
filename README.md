@@ -21,6 +21,13 @@ Example:
 }
 ```
 
+Mainnet endpoint:
+[https://api.thegraph.com/subgraphs/name/volodymyrzolotukhin/sbtidentityverifier-polygon](https://api.thegraph.com/subgraphs/name/volodymyrzolotukhin/sbtidentityverifier-polygon)
+
+Mainnet-Beta endpoint:
+[https://api.thegraph.com/subgraphs/name/volodymyrzolotukhin/sbtidentityverifier](https://api.thegraph.com/subgraphs/name/volodymyrzolotukhin/sbtidentityverifier)
+
+
 ## Build
 
 To build the service image locally, there is a shell script `build.sh` that can be used to build the image:
