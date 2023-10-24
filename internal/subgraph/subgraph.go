@@ -3,9 +3,9 @@ package subgraph
 import (
 	"context"
 	"github.com/hasura/go-graphql-client"
+	"github.com/rarimo/questn-integration-svc/internal/subgraph/queries"
 	"gitlab.com/distributed_lab/logan/v3"
 	"gitlab.com/distributed_lab/logan/v3/errors"
-	"gitlab.com/rarimo/questn-integration-svc/internal/subgraph/queries"
 )
 
 type subgraph struct {

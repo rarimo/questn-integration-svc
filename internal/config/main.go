@@ -1,11 +1,11 @@
 package config
 
 import (
+	"github.com/rarimo/questn-integration-svc/internal/subgraph"
 	"gitlab.com/distributed_lab/kit/comfig"
 	"gitlab.com/distributed_lab/kit/copus"
 	"gitlab.com/distributed_lab/kit/copus/types"
 	"gitlab.com/distributed_lab/kit/kv"
-	"gitlab.com/rarimo/questn-integration-svc/internal/subgraph"
 )
 
 type Config interface {

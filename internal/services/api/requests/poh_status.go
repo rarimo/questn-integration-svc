@@ -2,9 +2,9 @@ package requests
 
 import (
 	"github.com/go-ozzo/ozzo-validation/v4"
+	"github.com/rarimo/questn-integration-svc/internal/services/api/types"
 	"gitlab.com/distributed_lab/logan/v3/errors"
 	"gitlab.com/distributed_lab/urlval"
-	"gitlab.com/rarimo/questn-integration-svc/internal/services/api/types"
 	"net/http"
 )
 

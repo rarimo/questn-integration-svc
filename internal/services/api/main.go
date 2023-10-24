@@ -5,7 +5,7 @@ import (
 	"net"
 	"time"
 
-	"gitlab.com/rarimo/questn-integration-svc/internal/config"
+	"github.com/rarimo/questn-integration-svc/internal/config"
 
 	"gitlab.com/distributed_lab/ape"
 	"gitlab.com/distributed_lab/kit/copus/types"

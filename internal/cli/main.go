@@ -8,9 +8,9 @@ import (
 	"sync"
 	"syscall"
 
-	"gitlab.com/rarimo/questn-integration-svc/internal/services/api"
+	"github.com/rarimo/questn-integration-svc/internal/services/api"
 
-	"gitlab.com/rarimo/questn-integration-svc/internal/config"
+	"github.com/rarimo/questn-integration-svc/internal/config"
 
 	"github.com/alecthomas/kingpin"
 	"gitlab.com/distributed_lab/kit/kv"

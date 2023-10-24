@@ -2,11 +2,11 @@ package handlers
 
 import (
 	"context"
-	"gitlab.com/rarimo/questn-integration-svc/internal/subgraph"
+	"github.com/rarimo/questn-integration-svc/internal/subgraph"
 	"net/http"
 
+	"github.com/rarimo/questn-integration-svc/internal/config"
 	"gitlab.com/distributed_lab/logan/v3"
-	"gitlab.com/rarimo/questn-integration-svc/internal/config"
 )
 
 type ctxKey int

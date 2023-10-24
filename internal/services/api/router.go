@@ -1,7 +1,7 @@
 package api
 
 import (
-	"gitlab.com/rarimo/questn-integration-svc/internal/services/api/handlers"
+	"github.com/rarimo/questn-integration-svc/internal/services/api/handlers"
 
 	"github.com/go-chi/chi"
 	"gitlab.com/distributed_lab/ape"

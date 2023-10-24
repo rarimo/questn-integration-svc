@@ -1,4 +1,4 @@
-module gitlab.com/rarimo/questn-integration-svc
+module github.com/rarimo/questn-integration-svc
 
 go 1.20
 

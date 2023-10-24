@@ -3,7 +3,7 @@ package main
 import (
 	"os"
 
-	"gitlab.com/rarimo/questn-integration-svc/internal/cli"
+	"github.com/rarimo/questn-integration-svc/internal/cli"
 )
 
 func main() {

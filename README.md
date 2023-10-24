@@ -81,3 +81,6 @@ curl 'http://localhost:8000/questn/v1/poh_status?address=0x457ccef368a14c4d02c4b
   -H 'Content-Type: application/json' \
   --compressed
 ```
+
+## License
+[MIT](./LICENSE)

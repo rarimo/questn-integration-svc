@@ -1,7 +1,7 @@
 package models
 
 import (
-	"gitlab.com/rarimo/questn-integration-svc/internal/services/api/types"
+	"github.com/rarimo/questn-integration-svc/internal/services/api/types"
 	"net/http"
 )
 

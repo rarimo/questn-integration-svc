@@ -1,8 +1,8 @@
 package handlers
 
 import (
-	"gitlab.com/rarimo/questn-integration-svc/internal/services/api/models"
-	"gitlab.com/rarimo/questn-integration-svc/internal/services/api/requests"
+	"github.com/rarimo/questn-integration-svc/internal/services/api/models"
+	"github.com/rarimo/questn-integration-svc/internal/services/api/requests"
 	"net/http"
 )
 
